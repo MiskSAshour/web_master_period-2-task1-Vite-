@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-around;
+}
+
+.navbar-expand-lg .navbar-nav {
+  justify-content: space-evenly;
+  width: 50%;
+  max-width: 509px;
+}
+
+.rectangleImage::after {
+  content: "";
+  width: 1px;
+  height: 10px;
+  color: white;
+  position: relative;
+}
+
+.spacialH2::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  bottom: 15px;
+  right: 20px;
+}
+
+.plusSignV {
+  display: inline-block;
+  width: 3px;
+  height: 25px;
+  background-color: black;
+  position: relative;
+  right: 17px;
+  top: 3px;
+}
+
+.plusSignH {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  right: 109%;
+  bottom: 7px;
+}
+
+.StepIcon {
+  position: relative;
+}
+
+.StepIcon::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1px;
+  height: 70%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+}
+
+/* Media Query */
+
+/* Extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 375px) {
+  .H2title {
+    font-size: 2.2rem !important;
+  }
+
+  .plusSignV {
+    right: -8px;
+  }
+
+  .plusSignH2 {
+    right: 12% !important;
+    bottom: 31px;
+  }
+
+  .brilliance-button {
+    padding: 6px 20px !important;
+  }
+}
+
+/* small devices (phones, 600px and down) */
+@media only screen and (max-width: 425px) {
+  .CustomersImage {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .CustomersTitle {
+    display: block !important;
+    position: relative !important;
+    bottom: 198px !important;
+    right: -37%;
+    width: 66% !important;
+  }
+
+  .FirstReviewBox,
+  .SecondReviewBox {
+    width: 100% !important;
+    left: 0% !important;
+  }
+}
+
+/* small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    flex-direction: column;
+  }
+
+  .spacialH2 {
+    text-align: center;
+    font-size: 1.85rem !important;
+  }
+
+  .iconsp {
+    max-width: 200px;
+  }
+
+  .spacialH2::before {
+    width: 70px;
+    bottom: 10px;
+    right: 5px;
+  }
+
+  .brilliance-section {
+    flex-direction: column;
+  }
+
+  .brilliance-img {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .plusSignV {
+    right: -8px;
+  }
+
+  .plusSignH {
+    right: 32%;
+  }
+
+  .brilliance-button {
+    padding: 8px 18px;
+  }
+
+  .StepIcon::after {
+    height: 44%;
+    top: 49%;
+    left: 37%;
+  }
+
+  .StepIcon {
+    width: 50px;
+  }
+
+  .StepIcon img {
+    width: 50px;
+  }
+
+  .ml-16 {
+    margin-left: 0;
+  }
+
+  .StepsIcons {
+    width: 100%; /* Make the icons stack vertically */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .SimpleStepsImage {
+    height: auto; /* Adjust image height */
+    width: 100%;
+    margin: 20px 0; /* Add space between sections */
+  }
+
+  p {
+    width: 100%; /* Make the paragraph texts span full width */
+    font-size: 1rem; /* Decrease text size */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .spacialH2 {
+    font-size: 2.5rem !important;
+  }
+
+  .iconsp {
+    max-width: 220px !important;
+  }
+
+  .brilliance-section {
+    flex-direction: column;
+  }
+
+  .brilliance-img {
+    width: 85% !important;
+    margin-bottom: 20px;
+  }
+
+  .StepIcon::after {
+    height: 45%;
+    top: 68%;
+    left: 20%;
+  }
+
+  .container {
+    flex-wrap: wrap; /* Allow content to wrap if it overflows */
+  }
+
+  .StepIcon {
+    width: 15%;
+  }
+
+  h2 {
+    font-size: 2.5rem; /* Adjust heading size */
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .SimpleStepsImage {
+    height: 500px; /* Set a smaller image height */
+  }
+
+  p {
+    font-size: 1.2rem;
+    width: 90%; /* Allow paragraph text to wrap nicely */
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+
+  .spacialH2 {
+    font-size: 2.5rem !important;
+  }
+
+  .spacialH2::before {
+    width: 80px;
+  }
+
+  .H2title {
+    font-size: 2rem !important;
+  }
+
+  .brilliance-description {
+    font-size: 1rem !important;
+  }
+
+  .plusSignV {
+    right: -8px;
+    top: 3px;
+  }
+
+  .plusSignH {
+    right: 33%;
+    bottom: 7px;
+  }
+
+  .StepIcon::after {
+    height: 65%;
+    top: 35%;
+  }
+}
